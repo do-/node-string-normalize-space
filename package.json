@@ -1,0 +1,47 @@
+{
+  "name": "string-normalize-space",
+  "version": "1.0.0",
+  "description": "XPath 1.0 normalize-space analog",
+  "main": "index.js",
+  "files": [
+    "/lib",
+    "/badges"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test-ci": "jest --ci --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "index.js"
+    ],
+    "coverageReporters": [
+      "clover",
+      "json",
+      "lcov",
+      "text",
+      "json-summary"
+    ],
+    "verbose": false,
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/do-/node-string-normalize-space.git"
+  },
+  "keywords": [
+    "normalize",
+    "space"
+  ],
+  "author": "Dmitry Ovsyanko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/do-/node-string-normalize-space/issues"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
+  "homepage": "https://github.com/do-/node-string-normalize-space#readme"
+}
