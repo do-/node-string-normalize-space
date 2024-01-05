@@ -1,7 +1,7 @@
 {
   "name": "string-normalize-space",
-  "version": "1.0.0",
-  "description": "XPath 1.0 normalize-space analog",
+  "version": "1.0.1",
+  "description": "XPath 1.0 normalize-space analog, winston log formatter",
   "main": "index.js",
   "files": [
     "/lib",
@@ -33,7 +33,8 @@
   },
   "keywords": [
     "normalize",
-    "space"
+    "space",
+    "winston"
   ],
   "author": "Dmitry Ovsyanko",
   "license": "MIT",
@@ -41,7 +42,8 @@
     "url": "https://github.com/do-/node-string-normalize-space/issues"
   },
   "devDependencies": {
-    "jest": "^29.3.1"
+    "jest": "^29.3.1",
+    "winston": "^3.14.0"
   },
   "homepage": "https://github.com/do-/node-string-normalize-space#readme"
 }
