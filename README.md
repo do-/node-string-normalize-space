@@ -26,6 +26,7 @@ const ab = normalizeSpace (' A\r\n\t B ') // will be 'A B'
 
 ```js
 const {createLogger, format: {combine, printf}, transports} = require ('winston')
+
 const normalizeSpaceLogFormat = require ('string-normalize-space').logform
 
 const logger = createLogger ({
@@ -34,7 +35,7 @@ const logger = createLogger ({
   ],
   format: combine (
     printf (info => `${info.message} ${info.meta} ${info.stack}`), // may be lots of \n
-    normalizeSpace ()                                              // exactly one line
+    normalizeSpaceLogFormat ()                                     // exactly one line
   ),
 })
 ```
